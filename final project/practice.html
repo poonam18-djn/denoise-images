@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use of Processed Images">
+    <meta name="keywords" content="Image Processing, Image Restoration, Image Enhancement, Image Editing">
+    <meta name="author" content="Your Name">
+    <title>Image Processing</title>
+    <style>
+        /* Optional: Smooth scrolling effect */
+        html {
+                scroll-behavior: smooth;
+            }
+        </style>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+
+        /* Section Styling */
+        section {
+            display: none;
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+            text-align: justify;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        section:target {
+            display: block;
+        }
+
+        /* Image Styling */
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Welcome to My Website
+        <nav>
+            <a href="#introduction">Introduction</a>
+            <a href="#about">About Me</a>
+            <a href="#image-processing">Image Processing</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Images can be degraded during acquisition, processing, compression, transmission, and reproduction. We apply artificial neural networks (ANNs) to restore medical images adaptively.</p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an Electronics and Communication Engineer (B.Tech, M.Tech) focusing on image restoration. My work aims to enhance image clarity and integrity using advanced processing techniques.</p>
+        </section>
+
+        <!-- Image Processing Section -->
+        <section id="image-processing">
+            <h2>Image Processing</h2>
+            <p>Image processing involves analyzing and manipulating images to enhance their quality and extract useful information. Digital image restoration is a process of improving the appearance of an image by removing noise, blurring, or other imperfections. It is a technique used to enhance the quality of an image by removing unwanted artifacts and improving its visual appearance. Image restoration is an important part of image processing and is used in various applications such as medical imaging, satellite imaging, and forensic analysis.</p>
+
+            <h3>Degradation Model</h3>
+            <img src="diagram1/Picture1.png" alt="Degradation Model">
+            <figcaption>Figure 1. Degradation Model</figcaption>
+
+            <h3>ANN-Based Image Restoration</h3>
+            <p>ANN <a href="https://www.geeksforgeeks.org/introduction-to-artificial-neutral-networks/" target="_blank">(Artificial Neural Networks)</a> simulate biological neural networks to remove noise and restore degraded images. It is an adaptive system changing its structure during a learning phase. Commonly neural networks are adjusted, or trained, so that a particular input leads to a specific target output. Typically many such input/target pairs are used, in this supervised learning, to train a network. Batch training of a network proceeds by making weight and bias changes based on an entire set (batch) of input vectors.</p>
+            <img src="diagram1/Picture2.jpg" alt="Flow diagram of ANN-based approach">
+            <figcaption>Figure 2. ANN-Based Approach</figcaption>
+
+            <h3>Types of Noise in Image Processing</h3>
+            <ul style="text-align: left; margin-left: 20px;">
+                <li>Gaussian Noise</li>
+                <li>Salt and Pepper Noise</li>
+                <li>Poisson Noise</li>
+                <li>Speckle Noise</li>
+            </ul>
+    <!-- Figure 3 Section -->
+    <figure>
+        <img src="diagram1/Picture3.jpg" alt="De-noised Image - Figure 3" width="400">
+        <figcaption>Figure 3: Level 2 approach for De-noised image from ANN processing.</figcaption>
+    </figure>
+
+    <!-- Figure 4 Section -->
+    <figure>
+        <img src="diagram1/Picture4.jpg" alt="De-noised Image - Figure 4" width="400">
+        <figcaption>Figure 4: Level 4 approach for De-noised image from ANN processing.</figcaption>
+    </figure>
+<p>The de-noised images from ANN processing are compared using Mean Square Error (MSE) and Peak Signal-to-Noise Ratio (PSNR). A set of experiments are performed for the entire image and for the level 2 and 4 decomposition of the image through ANN. The de-noised images obtained through ANN are shown in Figure 3 and Figure 4 respectively.</p>       
+<h4>Conclusion</h4>
+<p>In conclusion, ANN-based image restoration techniques provide a robust and adaptive approach to improving image quality. By effectively removing noise and restoring degraded images, these methods have significant applications in fields such as medical imaging, satellite imaging, and forensic analysis. The results demonstrate the potential of ANN in achieving high-quality image restoration with measurable improvements in MSE and PSNR.</p>
+</section>
+    </main>
+
+    <footer>
+        © 2025 Image Processing | Designed by Poonam Baruah
+    </footer>
+
+</body>
+</html>
